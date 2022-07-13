@@ -142,11 +142,13 @@ figcaption {
 .place5 {
   grid-area: five;
   align-self: end;
+  width: 150px;
 }
 
 .place6 {
   grid-area: six;
   align-self: end;
+  width: 221.78px;
 }
 
 
