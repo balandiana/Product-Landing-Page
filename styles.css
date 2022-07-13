@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #E0FFFF;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#header {
+  margin-top: -100px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  background: linear-gradient(45deg, #87CEFA, white);
+}
+
+.header__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+
+.title-caption {
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+  color: black;
+  font-size: 20px
+}
+
+#nav-bar {
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+  padding-right: 10px;
+  flex-wrap: wrap;
+  list-style-type: none; letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 100px;
+}
+
+#form {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#features {
+  margin: 25px auto ;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+
+.features__transport {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px
+}
+
+.features__transport > img {
+  max-width: 60px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#places {
+  margin: 0 5px;
+  display: grid;
+  grid-template-columns: 3fr 2.5fr 3fr;
+  grid-column-gap: 3px;
+  grid-row-gap: 0;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "one two three"
+  "four two six"
+  "four five six";
+  justify-items: center;
+  align-items: stretch;
+}
+
+.place1 {
+  grid-area: one;
+}
+
+.place2 {
+  grid-area: two;
+}
+
+.place3 {
+  grid-area: three;
+}
+
+.place4 {
+  grid-area: four;
+}
+
+.place5 {
+  grid-area: five;
+  align-self: end;
+}
+
+.place6 {
+  grid-area: six;
+  align-self: end;
+}
+
+
+@media (min-width: 500px) {
+
+  #features {
+    padding-left: 30%
+  }
+
+  #places {
+    grid-column-gap: 6px;
+  }  
+}
+
+#video {
+  display: block;
+  margin: 30px auto;
+}
