@@ -152,10 +152,6 @@ figcaption {
 
 @media (min-width: 500px) {
 
-  #features {
-    padding-left: 30%
-  }
-
   #places {
     grid-column-gap: 6px;
   }  
